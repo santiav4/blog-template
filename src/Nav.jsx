@@ -3,7 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Nav = () => {
     return (
-        <div className=" p-[20px] flex justify-between bg-white ">
+        <div className=" test1 p-[20px] flex justify-between  text-white ">
             <div>logo</div>
             <div>
                 <AiOutlineMenu />

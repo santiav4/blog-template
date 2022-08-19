@@ -1,83 +1,21 @@
 import React from "react";
 
 import image1 from "./images/user.jpg";
+import TestimonialComments from "./TestimonialComments";
 
 const Testimonials = () => {
     return (
-        <div className=" p-[20px]">
-            <h1 className=" mb-[28px]">TESTIMONIAL</h1>
-            <div className=" flex items-start py-[24px] border-b-2">
-                <img
-                    className=" rounded-full mr-[12px]"
-                    src={image1}
-                    width="36"
-                    height="36"
-                    alt=""
-                />
-
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Qui maxime expedita dolores eius ad recusandae
-                        beatae porro repudiandae adipisci veniam fuga ipsa hic
-                    </p>
-                    <p>@userdefault1</p>
-                </div>
-            </div>
-            <div className=" flex items-start py-[24px] border-b-2">
-                <img
-                    className=" rounded-full mr-[12px]"
-                    src={image1}
-                    width="36"
-                    height="36"
-                    alt=""
-                />
-
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Qui maxime expedita dolores eius ad recusandae
-                        beatae porro repudiandae adipisci veniam fuga ipsa hic
-                    </p>
-                    <p>@userdefault1</p>
-                </div>
-            </div>
-            <div className=" flex items-start py-[24px] border-b-2">
-                <img
-                    className=" rounded-full mr-[12px]"
-                    src={image1}
-                    width="36"
-                    height="36"
-                    alt=""
-                />
-
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Qui maxime expedita dolores eius ad recusandae
-                        beatae porro repudiandae adipisci veniam fuga ipsa hic
-                    </p>
-                    <p>@userdefault1</p>
-                </div>
-            </div>
-            <div className=" flex items-start py-[24px] border-b-2">
-                <img
-                    className=" rounded-full mr-[12px]"
-                    src={image1}
-                    width="36"
-                    height="36"
-                    alt=""
-                />
-
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Qui maxime expedita dolores eius ad recusandae
-                        beatae porro repudiandae adipisci veniam fuga ipsa hic
-                    </p>
-                    <p>@userdefault1</p>
-                </div>
-            </div>
+        <div className=" p-[20px] bg-white">
+            <h1 className=" mb-[28px] tracking-wider font-semibold text-gray-400">
+                TESTIMONIAL
+            </h1>
+            <TestimonialComments image1={image1} />
+            <TestimonialComments image1={image1} />
+            <TestimonialComments image1={image1} />
+            <TestimonialComments image1={image1} />
+            <TestimonialComments image1={image1} />
+            <TestimonialComments image1={image1} />
+            <TestimonialComments image1={image1} />
         </div>
     );
 };

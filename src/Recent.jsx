@@ -1,55 +1,20 @@
 import React from "react";
 import image1 from "./images/latest.jpg";
+import RecentArticles from "./RecentArticles";
 const Recent = () => {
     return (
         //This are six articles
-        <div className=" p-[20px] bg-white">
-            <h1> RECENT ARTICLES</h1>
-            <div>
-                <div>
-                    <img src={image1} alt="" />
-                </div>
-                <p>May 08, 2022</p>
-                <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Assumenda, illo modi eum nemo amet alias eaque maiores
-                    architecto rem dicta ullam iure pariatur aliquam
-                    praesentium, ut magnam totam, cumque excepturi.
-                </p>
-            </div>
-            <div>
-                <div>
-                    <img src={image1} alt="" />
-                </div>
-                <p>May 08, 2022</p>
-                <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Assumenda, illo modi eum nemo amet alias eaque maiores
-                    architecto rem dicta ullam iure pariatur aliquam
-                    praesentium, ut magnam totam, cumque excepturi.
-                </p>
-            </div>
-            <div>
-                <div>
-                    <img src={image1} alt="" />
-                </div>
-                <p>May 08, 2022</p>
-                <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Assumenda, illo modi eum nemo amet alias eaque maiores
-                    architecto rem dicta ullam iure pariatur aliquam
-                    praesentium, ut magnam totam, cumque excepturi.
-                </p>
-            </div>
+        <div className=" p-[20px] text-white">
+            <h1 className=" pb-[28px] tracking-widest font-semibold text-gray-500">
+                {" "}
+                RECENT ARTICLES
+            </h1>
+            <RecentArticles image1={image1} />
+            <RecentArticles image1={image1} />
+            <RecentArticles image1={image1} />
+            <RecentArticles image1={image1} />
+            <RecentArticles image1={image1} />
+            <RecentArticles image1={image1} />
         </div>
     );
 };
