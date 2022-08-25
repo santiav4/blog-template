@@ -1,11 +1,14 @@
 import React from "react";
 
-const TestimonialComments = ({ image1 }) => {
+const TestimonialComments = ({ testimonial, lastItem, index }) => {
     return (
-        <div className=" flex items-start py-[24px] border-b-[1px]">
+        <div
+            className={`flex items-start py-[24px] md:pl-[20px] ${
+                lastItem === index ? "" : "border-b-[1px]"
+            }  border-l-[1px]`}>
             <img
                 className=" rounded-full mr-[12px]"
-                src={image1}
+                src={testimonial.image}
                 width="36"
                 height="36"
                 alt=""
@@ -13,11 +16,9 @@ const TestimonialComments = ({ image1 }) => {
 
             <div>
                 <p className=" font-thin tracking-wide">
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui maxime expedita dolores eius ad recusandae beatae porro
-                    repudiandae adipisci veniam fuga ipsa hic"
+                    {testimonial.comment}
                 </p>
-                <p className=" mt-[6px] font-semibold">@userdefault1</p>
+                <p className=" mt-[6px] font-semibold">{testimonial.tag}</p>
             </div>
         </div>
     );

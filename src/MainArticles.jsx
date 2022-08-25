@@ -1,19 +1,24 @@
 import React from "react";
 
-const MainArticles = ({ image1 }) => {
+const MainArticles = ({ article, index }) => {
     return (
-        <div className=" flex justify-between border-t-[1px] border-gray-500 pt-[24px] pb-[32px] ">
-            <div className="w-[50%]">
+        <div
+            className={`flex justify-between md:justify-end md:flex-row-reverse ${
+                index === 1
+                    ? "border-t-[1px] lg:border-0 lg:pt-0"
+                    : "lg:pt-[32px] "
+            } border-t-[1px] border-gray-500 pt-[24px]  pb-[32px]`}>
+            <div className="w-[50%] md:pl-[24px] md:w-[80%]">
                 <p className="  pb-[10px] text-gray-500 text-xs font-bold">
-                    May 05, 2022
+                    {article.date}
                 </p>
-                <h1 className=" text-xl font-semibold">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <h1 className=" text-xl lg:text-2xl font-semibold">
+                    {article.title}
                 </h1>
             </div>
-            <div className=" w-[50%] flex flex-col justify-start  items-end">
-                <div className=" h-[70%]">
-                    <img className=" h-full" src={image1} alt="" />
+            <div className=" w-[50%] md:w-[20%] lg:w-[50%] flex flex-col justify-start  items-end md:items-start">
+                <div className=" w-[100%] ">
+                    <img className=" h-full" src={article.image} alt="" />
                 </div>
             </div>
         </div>

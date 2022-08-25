@@ -30,7 +30,7 @@ function App() {
         return () => window.removeEventListener("scroll", listenToScroll);
     }, []);
     return (
-        <div className="  bg-[#121212]  w-screen box-border relative m-0 p-0">
+        <div className="  bg-[#121212]  w-screen max-w-[1289px] lg:mx-auto box-border relative m-0 p-0">
             <Nav />
             <Main />
             <Editors />
@@ -40,7 +40,7 @@ function App() {
             {isVisible && (
                 <button
                     id="hide"
-                    className="  fixed bottom-5 right-5 font-bold text-sm text-[#121212] p-[10px] rounded-md  bg-white drop-shadow-md">
+                    className="  fixed bottom-5 right-5 font-bold text-sm text-slate-500 p-[10px] rounded-md  bg-white drop-shadow-md">
                     <Link
                         className=" relative flex items-center"
                         activeClass="active"
