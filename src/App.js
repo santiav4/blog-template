@@ -1,10 +1,9 @@
 import Editors from "./Editors";
-import Header from "./Header";
 import Main from "./Main";
 import Nav from "./Nav";
 import Recent from "./Recent";
 import Testimonials from "./Testimonials";
-import * as Scroll from "react-scroll";
+
 import { Link } from "react-scroll";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -28,7 +27,7 @@ function App() {
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
         return () => window.removeEventListener("scroll", listenToScroll);
-    }, []);
+    }, [listenToScroll]);
     return (
         <div className="  bg-[#121212]  w-screen max-w-[1289px] lg:mx-auto box-border relative m-0 p-0">
             <Nav />

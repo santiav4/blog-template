@@ -1,6 +1,5 @@
 import React from "react";
 import EditorsArticles from "./EditorsArticles";
-import image1 from "./images/latest.jpg";
 import { ARTICLES } from "./data";
 
 const Editors = () => {

@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Nav from "./Nav";
-import image1 from "./images/latest.jpg";
+
 import MainArticles from "./MainArticles";
 import { ARTICLES } from "./data";
 

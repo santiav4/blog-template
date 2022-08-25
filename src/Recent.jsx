@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "./images/latest.jpg";
+
 import RecentArticles from "./RecentArticles";
 
 import { ARTICLES } from "./data";
