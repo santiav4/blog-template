@@ -27,7 +27,7 @@ function App() {
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
         return () => window.removeEventListener("scroll", listenToScroll);
-    }, [listenToScroll]);
+    });
     return (
         <div className="  bg-[#121212]  w-screen max-w-[1289px] lg:mx-auto box-border relative m-0 p-0">
             <Nav />
@@ -49,7 +49,7 @@ function App() {
                         offset={0}
                         duration={500}>
                         <p className=" mr-2">Back to Top</p>
-                        <FaArrowUp size={12} className="  " />
+                        <FaArrowUp size={12} />
                     </Link>
                 </button>
             )}

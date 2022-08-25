@@ -8,16 +8,17 @@ const Main = () => {
     const mainArticles = ARTICLES.filter(
         (article) => article.group === "main"
     )[0];
+    const filteredArticles = mainArticles.articles;
 
     return (
         // This is the main article has different styling & structure. Must be filtered from articles array
         <div className=" px-5 md:px-[40px]  text-white lg:">
             <Header />
             <div className=" lg:flex lg:flex-wrap lg:flex-col lg:h-[600px]">
-                {mainArticles.articles.map((article, index) =>
+                {filteredArticles.map((article, index) =>
                     0 === index ? (
                         <div
-                            key={article.id}
+                            key={index}
                             className=" md:flex lg:flex-col lg:justify-start md:items-start md:justify-between lg:h-full lg:w-[45%] ">
                             <img
                                 className=" md:w-[48%] lg:w-[100%] md:mb-[5%]"
@@ -37,12 +38,8 @@ const Main = () => {
                             </div>
                         </div>
                     ) : (
-                        <div className="lg:w-[50%]">
-                            <MainArticles
-                                key={article.id}
-                                article={article}
-                                index={index}
-                            />
+                        <div key={index} className="lg:w-[50%]">
+                            <MainArticles article={article} index={index} />
                         </div>
                     )
                 )}

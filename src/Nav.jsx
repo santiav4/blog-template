@@ -18,15 +18,19 @@ const Nav = () => {
                 <AiOutlineMenu size={20} />
             </div>
             <div className=" hidden lg:flex ">
-                {pages.map((page) => (
-                    <div className=" mr-[40px] font-bold text-gray-500  hover:text-white hover:cursor-pointer ease-in-out duration-300">
+                {pages.map((page, index) => (
+                    <div
+                        key={index}
+                        className=" mr-[40px] font-bold text-gray-500  hover:text-white hover:cursor-pointer ease-in-out duration-300">
                         {page}
                     </div>
                 ))}
             </div>
             <div className=" hidden lg:flex lg:w-[20%] lg:justify-between font-bold text-gray-500 hover:cursor-pointer">
-                {socials.map((social) => (
-                    <div className=" hover:text-white ease-in-out duration-300">
+                {socials.map((social, index) => (
+                    <div
+                        key={index}
+                        className=" hover:text-white ease-in-out duration-300">
                         {social}
                     </div>
                 ))}
